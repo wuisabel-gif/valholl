@@ -19,7 +19,7 @@
                 </div>
             </div>
             <hr class="footer-divider">
-            <span class="footer-copy">&copy; <?php echo date('Y'); ?> Valh&ouml;ll Mead Hall &middot; A wholly fictional establishment. No actual Vikings were summoned.</span>
+            <span class="footer-copy">&copy; <?php echo date('Y'); ?> Valh&ouml;ll Mead Hall &middot; A wholly fictional establishment. All rights reserved &middot; <a href="https://github.com/wuisabel-gif" class="footer-copy" target="_blank" rel="noopener">wuisabel-gif</a></span>
         </div>
     </footer>
 

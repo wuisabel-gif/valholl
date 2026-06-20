@@ -235,6 +235,8 @@ h1, h2, h3, h4, h5, .navbar-brand {
 .footer-text    { color: #a99e8b; margin: 0; }
 .footer-divider { border-color: var(--vh-bark); margin: 2rem 0 1rem; }
 .footer-copy    { color: #7d7464; font-size: 0.85rem; }
+.footer-copy a  { color: var(--vh-gold-lt); text-decoration: none; }
+.footer-copy a:hover { text-decoration: underline; }
 
 /* Hero photo, card images, menu page, alerts */
 
