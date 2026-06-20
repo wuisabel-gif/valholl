@@ -20,6 +20,16 @@
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
+    <meta name="description" content="Valhöll — a Viking bar &amp; mead hall in Los Angeles. Long tables, open flame, 30 meads on tap, axe lanes, and a long table that fills fast.">
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Valhöll — Viking Bar &amp; Mead Hall, Los Angeles">
+    <meta property="og:description" content="A Viking bar &amp; mead hall on the edge of the Pacific. Long tables, open flame, and mead worthy of the slain.">
+    <meta property="og:url" content="https://valholl.onrender.com">
+    <meta property="og:image" content="https://valholl.onrender.com/assets/hero.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
     <title>Valhöll &mdash; Viking Bar &amp; Mead Hall, Los Angeles</title>
   </head>
   <body>
