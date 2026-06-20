@@ -13,6 +13,12 @@
 
 body {
   background-color: var(--vh-wood);
+  background-image:
+    linear-gradient(rgba(15,10,6,0.88), rgba(15,10,6,0.88)),
+    url('../assets/carved-wood-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: var(--vh-bone);
   font-family: 'Spectral', Georgia, serif;
   display: flex;
@@ -167,6 +173,16 @@ h1, h2, h3, h4, h5, .navbar-brand {
 .page-lead  { color: #cabfab; max-width: 640px; margin: 1rem auto 0; }
 
 /* ---------- About: stats & values ---------- */
+.rune-panel {
+  background:
+    linear-gradient(rgba(15,10,6,0.8), rgba(15,10,6,0.9)),
+    url('../assets/rune-knotwork-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--vh-bark);
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+}
 .story-text { color: #cabfab; font-size: 1.05rem; }
 .saga-stats {
   display: grid;

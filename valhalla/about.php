@@ -10,6 +10,7 @@
     </div>
 
     <div class="container my-5">
+        <div class="rune-panel">
         <div class="row gy-5 align-items-center">
             <div class="col-md-6">
                 <h2 class="section-title">Why We Raised the Hall</h2>
@@ -48,6 +49,7 @@
                     <p class="value-text">Drums, laughter, the occasional war cry. This is not a quiet wine bar.</p>
                 </div>
             </div>
+        </div>
         </div>
 
         <div class="founder-section mt-5 pt-5">
