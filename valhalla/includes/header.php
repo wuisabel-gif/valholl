@@ -1,8 +1,9 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-valhalla">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.php">
-                <span class="brand-rune">&#5798;</span> VALH&Ouml;LL
+            <a class="navbar-brand d-flex align-items-center" href="index.php">
+                <img src="assets/valhol_logo.png" alt="Valh&ouml;ll" class="brand-logo">
+                <span class="brand-wordmark">VALH&Ouml;LL</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

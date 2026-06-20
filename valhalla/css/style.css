@@ -113,10 +113,13 @@ h1, h2, h3, h4, h5, .navbar-brand {
 .section-sub   { color: #b6ab97; margin-bottom: 2rem; }
 
 /* ---------- Menu cards (from products.php) ---------- */
+.flex-md-equal > * { flex: 1; }
 .menu-card {
   background-color: var(--vh-wood-2);
   border: 1px solid var(--vh-bark);
   border-radius: 6px;
+  display: flex;
+  flex-direction: column;
 }
 .menu-tag {
   display: inline-block;
@@ -135,8 +138,10 @@ h1, h2, h3, h4, h5, .navbar-brand {
 .menu-price { color: var(--vh-gold-lt); font-family: 'Cinzel', serif; font-weight: 700; font-size: 1.4rem; }
 .menu-coin  { font-size: 0.8rem; color: #8c8475; letter-spacing: 0.1em; }
 .menu-art {
-  width: 80%;
-  height: 220px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: auto;
+  aspect-ratio: 4 / 5;
   border-radius: 12px 12px 0 0;
   background:
     radial-gradient(circle at 50% 120%, rgba(199,155,75,0.35), transparent 60%),
@@ -147,12 +152,16 @@ h1, h2, h3, h4, h5, .navbar-brand {
 /* ---------- Page banners ---------- */
 .page-banner { border: 1px solid var(--vh-bark); border-radius: 6px; }
 .banner-saga {
-  background: linear-gradient(rgba(15,10,6,0.82), rgba(15,10,6,0.92)),
-              radial-gradient(circle at 30% 20%, #3a2a1a, #150e08);
+  background: linear-gradient(rgba(15,10,6,0.55), rgba(15,10,6,0.82)),
+              url('../assets/our_saga_background.jpg');
+  background-size: cover;
+  background-position: center;
 }
 .banner-find {
-  background: linear-gradient(rgba(15,10,6,0.82), rgba(15,10,6,0.92)),
-              radial-gradient(circle at 70% 30%, #2e1414, #150e08);
+  background: linear-gradient(rgba(15,10,6,0.55), rgba(15,10,6,0.82)),
+              url('../assets/contact_background.jpg');
+  background-size: cover;
+  background-position: center;
 }
 .page-title { color: var(--vh-bone); }
 .page-lead  { color: #cabfab; max-width: 640px; margin: 1rem auto 0; }
@@ -231,9 +240,10 @@ h1, h2, h3, h4, h5, .navbar-brand {
 
 /* Hero with a photographic backdrop (gradient sits on top for legibility) */
 .hero-photo {
-  background:
-    linear-gradient(rgba(15,10,6,0.78), rgba(15,10,6,0.92)),
-    url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1600&q=80');
+  background-color: #0f0a06;
+  background-image:
+    linear-gradient(rgba(15,10,6,0.62), rgba(15,10,6,0.86)),
+    url('../assets/hero.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -251,8 +261,10 @@ h1, h2, h3, h4, h5, .navbar-brand {
 
 /* ---- Banner for the menu page ---- */
 .banner-menu {
-  background: linear-gradient(rgba(15,10,6,0.82), rgba(15,10,6,0.92)),
-              radial-gradient(circle at 50% 20%, #3a2a1a, #150e08);
+  background: linear-gradient(rgba(15,10,6,0.55), rgba(15,10,6,0.82)),
+              url('../assets/menu_background.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 /* ---- Full menu page list ---- */
@@ -297,4 +309,112 @@ h1, h2, h3, h4, h5, .navbar-brand {
   background-color: rgba(122,31,31,0.2);
   border: 1px solid var(--vh-blood);
   color: #e6b3b3;
+}
+
+/* Navbar logo */
+.brand-logo { height: 44px; width: auto; margin-right: 0.6rem; }
+
+/* Hero background video */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(15,10,6,0.55), rgba(15,10,6,0.82));
+  z-index: 1;
+}
+.hero-content { z-index: 2; }
+
+/* "Step Inside the Hall" feature video */
+.hall-video {
+  max-width: 900px;
+  border: 1px solid var(--vh-gold);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+.hall-video video { width: 100%; display: block; }
+
+/* Full menu: dish cards with photos */
+.dish-card {
+  background: var(--vh-wood-2);
+  border: 1px solid var(--vh-bark);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.dish-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  background-color: #0f0a06;
+}
+.dish-body { padding: 1rem 1.1rem 1.2rem; }
+.dish-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.dish-name {
+  font-family: 'Cinzel', serif;
+  color: var(--vh-bone);
+  font-size: 1.05rem;
+  margin: 0;
+}
+.dish-price {
+  font-family: 'Cinzel', serif;
+  color: var(--vh-gold-lt);
+  font-weight: 700;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+.dish-desc { color: #b6ab97; font-size: 0.92rem; margin: 0.4rem 0 0; }
+
+/* About: founder story */
+.founder-portrait {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background-color: #0f0a06;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--vh-gold);
+  border-radius: 4px;
+  margin-bottom: 1.25rem;
+}
+.founder-body::after { content: ""; display: block; clear: both; }
+@media (min-width: 768px) {
+  .founder-body .founder-portrait {
+    float: left;
+    width: 40%;
+    margin: 0.4rem 1.8rem 1rem 0;
+  }
+  /* keep pull-quotes full-width below the portrait, never cramped beside it */
+  .founder-body .story-quote { clear: left; }
+}
+.story-quote {
+  color: var(--vh-gold-lt);
+  font-family: 'Cinzel', serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: center;
+  margin: 1.75rem 0;
+}
+.map-embed {
+  border: 1px solid var(--vh-gold);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 420px;
+  border: 0;
+  filter: grayscale(0.35) sepia(0.18) brightness(0.92);
 }

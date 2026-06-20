@@ -6,14 +6,14 @@ if (!isset($menu_pair) || !is_array($menu_pair)) {
             'price' => '12',
             'desc'  => 'Wildflower honey, aged in oak. Sweet, golden, and dangerous.',
             'tag'   => 'House Pour',
-            'img'   => 'https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?auto=format&fit=crop&w=800&q=80',
+            'img'   => 'assets/the-jarls-mead.jpg',
         ],
         [
             'name'  => 'Bloodaxe Old Fashioned',
             'price' => '15',
             'desc'  => 'Rye, charred orange, smoked maple bitters. Served over a single iceberg.',
             'tag'   => 'Signature',
-            'img'   => 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80',
+            'img'   => 'assets/bloodaxe-old-fashioned.jpg',
         ],
     ];
 }

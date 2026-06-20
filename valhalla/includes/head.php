@@ -16,6 +16,10 @@
     <!-- Site styles -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
     <title>Valhöll &mdash; Viking Bar &amp; Mead Hall, Los Angeles</title>
   </head>
   <body>
