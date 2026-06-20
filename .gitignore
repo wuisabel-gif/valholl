@@ -1,1 +1,4 @@
 .DS_Store
+
+# Local cadence voice profile — not part of the site
+voices/valholl.md

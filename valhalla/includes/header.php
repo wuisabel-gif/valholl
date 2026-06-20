@@ -23,8 +23,8 @@
                 <a class="nav-link" href="contact.php">Find Us</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Seek a brew&hellip;" aria-label="Search">
+            <form class="d-flex" role="search" action="search.php" method="get">
+                <input class="form-control me-2" type="search" name="q" placeholder="Seek a brew&hellip;" aria-label="Search" value="<?php echo isset($_GET['q']) ? htmlspecialchars($_GET['q'], ENT_QUOTES, 'UTF-8') : ''; ?>">
                 <button class="btn btn-outline-gold" type="submit">Search</button>
             </form>
             </div>
