@@ -1,0 +1,300 @@
+/* VALHÖLL — Viking Bar & Mead Hall theme */
+
+:root {
+  --vh-wood:    #1c140d;   /* dark charred wood   */
+  --vh-wood-2:  #2a1d12;   /* lighter panel       */
+  --vh-bark:    #3a2a1a;
+  --vh-gold:    #c79b4b;   /* hammered gold       */
+  --vh-gold-lt: #e6c178;
+  --vh-bone:    #ece3d2;   /* parchment / bone    */
+  --vh-blood:   #7a1f1f;   /* deep blood red      */
+  --vh-iron:    #6b6f74;
+}
+
+body {
+  background-color: var(--vh-wood);
+  color: var(--vh-bone);
+  font-family: 'Spectral', Georgia, serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main { flex: 1 0 auto; }
+
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.02em;
+}
+
+.brand-rune { color: var(--vh-gold); }
+
+/* ---------- Navbar ---------- */
+.navbar-valhalla {
+  background-color: var(--vh-wood-2);
+  border-bottom: 2px solid var(--vh-gold);
+}
+.navbar-valhalla .navbar-brand {
+  color: var(--vh-gold-lt);
+  font-weight: 900;
+  font-size: 1.6rem;
+  letter-spacing: 0.12em;
+}
+.navbar-valhalla .nav-link {
+  color: var(--vh-bone);
+  text-transform: uppercase;
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  margin: 0 0.35rem;
+}
+.navbar-valhalla .nav-link:hover,
+.navbar-valhalla .nav-link.active { color: var(--vh-gold-lt); }
+
+/* ---------- Buttons ---------- */
+.btn-gold {
+  background-color: var(--vh-gold);
+  border: 1px solid var(--vh-gold);
+  color: var(--vh-wood);
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.btn-gold:hover { background-color: var(--vh-gold-lt); border-color: var(--vh-gold-lt); color: var(--vh-wood); }
+
+.btn-outline-gold {
+  border: 1px solid var(--vh-gold);
+  color: var(--vh-gold-lt);
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.btn-outline-gold:hover { background-color: var(--vh-gold); color: var(--vh-wood); }
+
+/* ---------- Hero ---------- */
+.hero-valhalla {
+  background:
+    linear-gradient(rgba(15,10,6,0.78), rgba(15,10,6,0.92)),
+    repeating-linear-gradient(90deg, #20160d 0px, #20160d 38px, #241a0f 38px, #241a0f 76px);
+  border: 1px solid var(--vh-bark);
+  border-radius: 6px;
+}
+.hero-eyebrow {
+  display: inline-block;
+  color: var(--vh-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.hero-title {
+  color: var(--vh-bone);
+  letter-spacing: 0.18em;
+  text-shadow: 0 2px 18px rgba(199,155,75,0.25);
+}
+.hero-lead { color: #cabfab; max-width: 640px; margin: 1.25rem auto 2rem; }
+
+/* ---------- Banner strip ---------- */
+.banner-strip {
+  background-color: var(--vh-blood);
+  color: var(--vh-bone);
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  border-top: 2px solid var(--vh-gold);
+  border-bottom: 2px solid var(--vh-gold);
+}
+
+/* ---------- Section headings ---------- */
+.section-title { color: var(--vh-gold-lt); }
+.section-sub   { color: #b6ab97; margin-bottom: 2rem; }
+
+/* ---------- Menu cards (from products.php) ---------- */
+.menu-card {
+  background-color: var(--vh-wood-2);
+  border: 1px solid var(--vh-bark);
+  border-radius: 6px;
+}
+.menu-tag {
+  display: inline-block;
+  background: var(--vh-gold);
+  color: var(--vh-wood);
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.7rem;
+  border-radius: 2px;
+  margin-bottom: 0.75rem;
+}
+.menu-name  { color: var(--vh-bone); }
+.menu-desc  { color: #b6ab97; }
+.menu-price { color: var(--vh-gold-lt); font-family: 'Cinzel', serif; font-weight: 700; font-size: 1.4rem; }
+.menu-coin  { font-size: 0.8rem; color: #8c8475; letter-spacing: 0.1em; }
+.menu-art {
+  width: 80%;
+  height: 220px;
+  border-radius: 12px 12px 0 0;
+  background:
+    radial-gradient(circle at 50% 120%, rgba(199,155,75,0.35), transparent 60%),
+    repeating-linear-gradient(135deg, #241a0f 0 14px, #2c2013 14px 28px);
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.6);
+}
+
+/* ---------- Page banners ---------- */
+.page-banner { border: 1px solid var(--vh-bark); border-radius: 6px; }
+.banner-saga {
+  background: linear-gradient(rgba(15,10,6,0.82), rgba(15,10,6,0.92)),
+              radial-gradient(circle at 30% 20%, #3a2a1a, #150e08);
+}
+.banner-find {
+  background: linear-gradient(rgba(15,10,6,0.82), rgba(15,10,6,0.92)),
+              radial-gradient(circle at 70% 30%, #2e1414, #150e08);
+}
+.page-title { color: var(--vh-bone); }
+.page-lead  { color: #cabfab; max-width: 640px; margin: 1rem auto 0; }
+
+/* ---------- About: stats & values ---------- */
+.story-text { color: #cabfab; font-size: 1.05rem; }
+.saga-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.stat {
+  background: var(--vh-wood-2);
+  border: 1px solid var(--vh-bark);
+  border-radius: 6px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+.stat-num   { display: block; font-family: 'Cinzel', serif; font-size: 2.4rem; color: var(--vh-gold-lt); }
+.stat-label { color: #b6ab97; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem; }
+
+.value-card {
+  background: var(--vh-wood-2);
+  border: 1px solid var(--vh-bark);
+  border-radius: 6px;
+  padding: 2rem 1.5rem;
+  height: 100%;
+}
+.value-rune  { font-size: 2.2rem; color: var(--vh-gold); }
+.value-title { color: var(--vh-bone); margin-top: 0.75rem; font-size: 1.25rem; }
+.value-text  { color: #b6ab97; }
+
+/* ---------- Contact ---------- */
+.reserve-form .form-label { color: var(--vh-gold-lt); font-family: 'Cinzel', serif; font-size: 0.85rem; }
+.reserve-form .form-control {
+  background-color: var(--vh-wood-2);
+  border: 1px solid var(--vh-bark);
+  color: var(--vh-bone);
+}
+.reserve-form .form-control:focus {
+  background-color: var(--vh-wood-2);
+  border-color: var(--vh-gold);
+  box-shadow: 0 0 0 0.2rem rgba(199,155,75,0.2);
+  color: var(--vh-bone);
+}
+.contact-block { margin-bottom: 1.5rem; }
+.contact-label { color: var(--vh-gold-lt); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.85rem; }
+.contact-text  { color: #cabfab; }
+.map-placeholder {
+  margin-top: 1.5rem;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #8c8475;
+  background:
+    repeating-linear-gradient(45deg, #20160d 0 18px, #241a0f 18px 36px);
+  border: 1px dashed var(--vh-bark);
+  border-radius: 6px;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.1em;
+}
+
+/* ---------- Footer ---------- */
+.footer-valhalla {
+  background-color: #150e08;
+  border-top: 2px solid var(--vh-gold);
+}
+.footer-heading { color: var(--vh-gold-lt); font-size: 1.1rem; }
+.footer-text    { color: #a99e8b; margin: 0; }
+.footer-divider { border-color: var(--vh-bark); margin: 2rem 0 1rem; }
+.footer-copy    { color: #7d7464; font-size: 0.85rem; }
+
+/* Hero photo, card images, menu page, alerts */
+
+/* Hero with a photographic backdrop (gradient sits on top for legibility) */
+.hero-photo {
+  background:
+    linear-gradient(rgba(15,10,6,0.78), rgba(15,10,6,0.92)),
+    url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Photo inside the menu-art box; gradient remains as fallback behind it */
+.menu-art { position: relative; }
+.menu-art img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+/* ---- Banner for the menu page ---- */
+.banner-menu {
+  background: linear-gradient(rgba(15,10,6,0.82), rgba(15,10,6,0.92)),
+              radial-gradient(circle at 50% 20%, #3a2a1a, #150e08);
+}
+
+/* ---- Full menu page list ---- */
+.menu-section-title {
+  border-bottom: 2px solid var(--vh-gold);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.menu-row { margin-bottom: 1.25rem; }
+.menu-row-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.menu-row-name {
+  font-family: 'Cinzel', serif;
+  color: var(--vh-bone);
+  font-size: 1.15rem;
+  white-space: nowrap;
+}
+.menu-row-dots {
+  flex: 1 1 auto;
+  border-bottom: 1px dotted var(--vh-bark);
+  transform: translateY(-4px);
+}
+.menu-row-price {
+  font-family: 'Cinzel', serif;
+  color: var(--vh-gold-lt);
+  font-weight: 700;
+  font-size: 1.15rem;
+  white-space: nowrap;
+}
+.menu-row-desc { color: #b6ab97; margin: 0.25rem 0 0; }
+
+/* ---- Reservation alerts ---- */
+.alert-skol {
+  background-color: rgba(199,155,75,0.15);
+  border: 1px solid var(--vh-gold);
+  color: var(--vh-gold-lt);
+}
+.alert-blood {
+  background-color: rgba(122,31,31,0.2);
+  border: 1px solid var(--vh-blood);
+  color: #e6b3b3;
+}
