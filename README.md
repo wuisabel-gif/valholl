@@ -8,8 +8,8 @@
 
 A PHP + Bootstrap site for a Viking bar and mead hall in Los Angeles.
 
-> A practice project by [@wuisabel-gif](https://github.com/wuisabel-gif). Valhöll
-> isn't a real bar. I made it up so I'd have a full site to build from scratch.
+A practice project by [@wuisabel-gif](https://github.com/wuisabel-gif). Valhöll
+isn't a real bar. I made it up so I'd have a full site to build from scratch.
 
 ## Run locally
 
@@ -31,8 +31,8 @@ it deploys on any Docker-based host (Render, Railway, Fly.io):
 2. Create a new **Web Service** on the host and connect this repo.
 3. The host detects the `Dockerfile` and builds automatically.
 
-> Note: the reservation form uses PHP `mail()`, which needs an SMTP service
-> configured on the host to actually send email.
+Note: the reservation form uses PHP `mail()`, which needs an SMTP service
+configured on the host to actually send email.
 
 ## About this project
 
