@@ -1,6 +1,10 @@
-# Valhöll — Viking Bar & Mead Hall
+<p align="center">
+  <img src="valhalla/assets/valhol_logo.png" alt="Valhöll logo" width="160">
+</p>
 
-🌐 **Live site:** https://valholl.onrender.com
+<h1 align="center">Valhöll — Viking Bar & Mead Hall</h1>
+
+<p align="center">🌐 <strong>Live site:</strong> <a href="https://valholl.onrender.com">valholl.onrender.com</a></p>
 
 A PHP + Bootstrap site for a Viking bar and mead hall in Los Angeles.
 
