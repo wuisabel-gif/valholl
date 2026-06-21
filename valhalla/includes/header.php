@@ -17,6 +17,9 @@
                 <a class="nav-link" href="menu.php">Feast Menu</a>
                 </li>
                 <li class="nav-item">
+                <a class="nav-link" href="gallery.php">Gather</a>
+                </li>
+                <li class="nav-item">
                 <a class="nav-link" href="about.php">Our Saga</a>
                 </li>
                 <li class="nav-item">
